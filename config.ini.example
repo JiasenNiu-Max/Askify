@@ -1,0 +1,30 @@
+[APP]
+SECRET_KEY =  
+JWT_SECRET_KEY =
+
+[POSTGRESQL]
+DATABASE_URL = 
+
+[GOOGLE]
+GOOGLE_OAUTH_CLIENT_ID =
+GOOGLE_OAUTH_CLIENT_SECRET =
+GOOGLE_OAUTH_REDIRECT_URI =
+GOOGLE_OAUTH_AUTH_URL = https://accounts.google.com/o/oauth2/v2/auth
+GOOGLE_OAUTH_TOKEN_URL = https://oauth2.googleapis.com/token
+GOOGLE_OAUTH_USER_INFO_URL = https://www.googleapis.com/oauth2/v3/userinfo
+GOOGLE_OAUTH_SCOPE_PROFILE = https://www.googleapis.com/auth/userinfo.profile
+GOOGLE_OAUTH_SCOPE_EMAIL = https://www.googleapis.com/auth/userinfo.email
+
+[GITHUB]
+GITHUB_OAUTH_CLIENT_ID = 
+GITHUB_OAUTH_CLIENT_SECRET = 
+GITHUB_OAUTH_REDIRECT_URI = 
+GITHUB_OAUTH_AUTH_URL = https://github.com/login/oauth/authorize
+GITHUB_OAUTH_TOKEN_URL = https://github.com/login/oauth/access_token
+GITHUB_OAUTH_USER_INFO_URL = https://api.github.com/user
+
+[CLOUDFLARE]
+ACCOUNT_ID = # Your Cloudflare account ID
+API_TOKEN = # Your Cloudflare API token with R2 permissions
+R2_BUCKET_NAME = # Your R2 bucket name
+R2_PUBLIC_URL = https://<custom-domain>/ # Your R2 public URL

@@ -1,0 +1,12 @@
+{% macro render_user_stst(name, value) -%}
+<article class="orb">
+  <div class="orb_graphic">
+    <svg>
+      <circle class="fill" cx="55" cy="55" r="50"></circle>
+      <circle class="progress" cx="55" cy="55" r="50"></circle>
+    </svg>
+    <div class="orb_value count">{{ value }}</div>
+  </div>
+  <div class="orb_label">{{ name }}</div>
+</article>
+{%- endmacro %}

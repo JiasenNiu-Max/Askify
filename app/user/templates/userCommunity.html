@@ -1,0 +1,24 @@
+{% macro render_user_community(community) -%}
+<div class="card_shadow_style mt-3">
+  <div class="card basic_style">
+    <div class="card-img-holder">
+      <img
+        class="img-fluid"
+        src="https://pub-6a9854a0ccb24e21bc5c2722215877d6.r2.dev/ASKIFY.webp"
+        alt="logo"
+      />
+    </div>
+    <h3 class="community-title">{{ community.name }}</h3>
+    <p class="description">{{ community.description }}</p>
+    <div class="options text-center">
+      <button
+        type="button"
+        class="btn btn-sm button_style"
+        onclick="window.open('{{ url_for('community.user_community') }}', '_blank')"
+      >
+        More
+      </button>
+    </div>
+  </div>
+</div>
+{%- endmacro %}
